@@ -254,4 +254,24 @@ describe('events', () => {
     expect(moves).toHaveBeenCalledTimes(1);
     expect(moves.mock.calls[0]?.[0]).toMatchObject({ visible: true, paneId: 'main' });
   });
+
+  it('keeps the horizontal crosshair line at the pointer unless the magnet mode is on', async () => {
+    const chart = chartWithBars(200);
+    pointer(chart, 'pointermove', 200, 120, { buttons: 0 });
+    await new Promise((resolve) => setTimeout(resolve, 40));
+    chart.screenshot();
+    const free = chart.crosshair.get();
+
+    expect(free?.y).toBe(120);
+    expect(free?.price).not.toBe(free?.bar?.close);
+
+    chart.applyOptions({ crosshair: { mode: 'magnet' } });
+    pointer(chart, 'pointermove', 200, 120, { buttons: 0 });
+    await new Promise((resolve) => setTimeout(resolve, 40));
+    chart.screenshot();
+    const magnet = chart.crosshair.get();
+
+    expect(magnet?.price).toBe(magnet?.bar?.close);
+    expect(magnet?.x).toBe(free?.x);
+  });
 });

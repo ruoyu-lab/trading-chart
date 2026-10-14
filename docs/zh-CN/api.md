@@ -272,7 +272,7 @@ interface ChartPointerEvent {
 | `theme`（`darkTheme`）                                                                                                 | 颜色；同时也导出了 `lightTheme`                                              |
 | `font.family`、`font.size`（`12`）                                                                                     | 坐标轴、图例和标签的文字                                                     |
 | `grid.vertical`、`grid.horizontal`（`true`），`grid.style`（`solid`）                                                  |                                                                              |
-| `crosshair.mode`（`magnet`）                                                                                           | `magnet` 吸附到悬停 K 线的收盘价，`free` 跟随指针                            |
+| `crosshair.mode`（`free`）                                                                                             | `free` 跟随指针，`magnet` 吸附到悬停 K 线的收盘价                            |
 | `crosshair.vertical`、`crosshair.horizontal`、`crosshair.labels`（`true`），`crosshair.style`（`dashed`）              |                                                                              |
 | `mainSeries.type`（`candles`）                                                                                         | 任意序列类型                                                                 |
 | `mainSeries.source`（`close`）                                                                                         | 线类图形所绘制的价格：`open`、`high`、`low`、`close`、`hl2`、`hlc3`、`ohlc4` |

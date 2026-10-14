@@ -272,7 +272,7 @@ Defaults in parentheses.
 | `theme` (`darkTheme`)                                                                                               | Colors; `lightTheme` is exported too                                                     |
 | `font.family`, `font.size` (`12`)                                                                                   | Text of axes, legends and labels                                                         |
 | `grid.vertical`, `grid.horizontal` (`true`), `grid.style` (`solid`)                                                 |                                                                                          |
-| `crosshair.mode` (`magnet`)                                                                                         | `magnet` snaps to the close of the hovered bar, `free` follows the pointer               |
+| `crosshair.mode` (`free`)                                                                                           | `free` follows the pointer, `magnet` snaps to the close of the hovered bar               |
 | `crosshair.vertical`, `crosshair.horizontal`, `crosshair.labels` (`true`), `crosshair.style` (`dashed`)             |                                                                                          |
 | `mainSeries.type` (`candles`)                                                                                       | Any series type                                                                          |
 | `mainSeries.source` (`close`)                                                                                       | Price plotted by line-like types: `open`, `high`, `low`, `close`, `hl2`, `hlc3`, `ohlc4` |

@@ -2,6 +2,12 @@
 
 All notable changes are documented here. The project follows [Semantic Versioning](https://semver.org/); while the version is below 1.0, minor releases may change the API.
 
+## 0.1.0-beta.2
+
+### Changed
+
+- The crosshair now follows the pointer by default: `crosshair.mode` defaults to `free`, so the horizontal line and the price label stay at the pointer instead of snapping to the close of the hovered bar. Set `crosshair.mode` to `magnet` for the previous behavior. The vertical line still centers on the hovered bar.
+
 ## 0.1.0-beta.1
 
 First public release.

@@ -82,7 +82,7 @@ const chart = createChart(container, {
   priceScale: { precision: 2 }
 });
 
-chart.applyOptions({ crosshair: { mode: 'free' } });
+chart.applyOptions({ crosshair: { mode: 'magnet' } });
 ```
 
 Invalid options throw and leave the chart unchanged. See [all options](api.md#options).

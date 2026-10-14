@@ -1,6 +1,6 @@
 {
   "name": "@trading-chart-sdk/core",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "description": "Framework-agnostic, high-performance Canvas trading chart SDK: candlesticks, indicators, drawing tools, order lines, markers and price alerts.",
   "license": "MIT",
   "type": "module",

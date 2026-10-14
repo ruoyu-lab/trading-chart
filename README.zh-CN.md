@@ -5,7 +5,7 @@
 **与框架无关的 Canvas 交易图表 SDK：K 线、技术指标、画线工具、可拖动的委托单和价格预警，gzip 后仅 68 kB。**
 
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![version](https://img.shields.io/badge/version-0.1.0--beta.1-orange)](CHANGELOG.md)
+[![version](https://img.shields.io/badge/version-0.1.0--beta.2-orange)](CHANGELOG.md)
 [![CI](https://github.com/ruoyu-lab/trading-chart-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/ruoyu-lab/trading-chart-sdk/actions/workflows/ci.yml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6)](tsconfig.base.json)
 [![gzip](https://img.shields.io/badge/gzip-68%20kB-brightgreen)](scripts/check-size.mjs)
@@ -134,7 +134,7 @@ socket.onmessage = (event) => chart.data.update(JSON.parse(event.data));
 <summary><b>不使用打包工具</b></summary>
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@trading-chart-sdk/core@0.1.0-beta.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/@trading-chart-sdk/core@0.1.0-beta.2"></script>
 <div id="chart" style="height: 480px"></div>
 <script>
   const chart = TradingChart.createChart(document.getElementById('chart'));

@@ -18,7 +18,7 @@ export function createDefaultOptions(): ChartOptions {
       style: 'solid'
     },
     crosshair: {
-      mode: 'magnet',
+      mode: 'free',
       vertical: true,
       horizontal: true,
       labels: true,

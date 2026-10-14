@@ -5,7 +5,7 @@
 **A framework-agnostic Canvas SDK for trading charts: candlesticks, indicators, drawing tools, draggable orders and price alerts, in 68 kB gzipped.**
 
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![version](https://img.shields.io/badge/version-0.1.0--beta.1-orange)](CHANGELOG.md)
+[![version](https://img.shields.io/badge/version-0.1.0--beta.2-orange)](CHANGELOG.md)
 [![CI](https://github.com/ruoyu-lab/trading-chart-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/ruoyu-lab/trading-chart-sdk/actions/workflows/ci.yml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6)](tsconfig.base.json)
 [![gzip](https://img.shields.io/badge/gzip-68%20kB-brightgreen)](scripts/check-size.mjs)
@@ -134,7 +134,7 @@ The chart fills its container and follows its size. `time` accepts epoch millise
 <summary><b>Without a bundler</b></summary>
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@trading-chart-sdk/core@0.1.0-beta.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/@trading-chart-sdk/core@0.1.0-beta.2"></script>
 <div id="chart" style="height: 480px"></div>
 <script>
   const chart = TradingChart.createChart(document.getElementById('chart'));

@@ -82,7 +82,7 @@ const chart = createChart(container, {
   priceScale: { precision: 2 }
 });
 
-chart.applyOptions({ crosshair: { mode: 'free' } });
+chart.applyOptions({ crosshair: { mode: 'magnet' } });
 ```
 
 非法配置项会抛出错误，图表保持不变。参见[全部配置项](api.md#配置项)。
