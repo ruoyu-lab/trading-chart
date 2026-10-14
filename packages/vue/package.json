@@ -1,0 +1,53 @@
+{
+  "name": "@trading-chart-sdk/vue",
+  "version": "0.1.0-beta.1",
+  "description": "Official Vue 3 adapter for @trading-chart-sdk/core.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "@trading-chart-sdk/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsdown"
+  },
+  "peerDependencies": {
+    "@trading-chart-sdk/core": "0.1.0-beta.1",
+    "vue": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruoyu-lab/trading-chart-sdk.git",
+    "directory": "packages/vue"
+  },
+  "homepage": "https://github.com/ruoyu-lab/trading-chart-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/ruoyu-lab/trading-chart-sdk/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "chart",
+    "trading",
+    "candlestick",
+    "kline"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

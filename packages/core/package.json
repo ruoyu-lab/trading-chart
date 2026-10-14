@@ -1,0 +1,54 @@
+{
+  "name": "@trading-chart-sdk/core",
+  "version": "0.1.0-beta.1",
+  "description": "Framework-agnostic, high-performance Canvas trading chart SDK: candlesticks, indicators, drawing tools, order lines, markers and price alerts.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "@trading-chart-sdk/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/index.iife.js",
+  "jsdelivr": "./dist/index.iife.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsdown"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruoyu-lab/trading-chart-sdk.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/ruoyu-lab/trading-chart-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/ruoyu-lab/trading-chart-sdk/issues"
+  },
+  "keywords": [
+    "chart",
+    "trading",
+    "candlestick",
+    "kline",
+    "canvas",
+    "technical-analysis",
+    "financial-charts",
+    "indicators",
+    "sdk"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

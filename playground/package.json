@@ -1,0 +1,18 @@
+{
+  "name": "playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@trading-chart-sdk/core": "0.1.0-beta.1",
+    "@trading-chart-sdk/react": "0.1.0-beta.1",
+    "@trading-chart-sdk/vue": "0.1.0-beta.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "vue": "^3.5.43"
+  }
+}

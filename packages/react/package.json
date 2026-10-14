@@ -1,0 +1,52 @@
+{
+  "name": "@trading-chart-sdk/react",
+  "version": "0.1.0-beta.1",
+  "description": "Official React adapter for @trading-chart-sdk/core.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "@trading-chart-sdk/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsdown"
+  },
+  "peerDependencies": {
+    "@trading-chart-sdk/core": "0.1.0-beta.1",
+    "react": "^18.3.0 || ^19.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruoyu-lab/trading-chart-sdk.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/ruoyu-lab/trading-chart-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/ruoyu-lab/trading-chart-sdk/issues"
+  },
+  "keywords": [
+    "react",
+    "chart",
+    "trading",
+    "candlestick",
+    "kline"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
